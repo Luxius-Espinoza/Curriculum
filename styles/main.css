@@ -1,0 +1,382 @@
+/* IMPORTANDO FUENTES */
+@font-face{
+    font-family: 'Beth_Ellen';
+    src: url('../fonts/Beth_Ellen/BethEllen-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+/* VALORES GLOBALES */
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 70%;
+    margin: auto;
+    font-family: 'Raleway';
+    font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Poppins';
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.logo{
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+/* Creando logo */
+.capa1{
+    width: 41.72px;
+    height: 41.72px;
+    background-color: #6D0AD3;
+    transform: rotate(135deg);
+    position: absolute;
+    display: block;
+}
+
+.capa2{
+    width: 41.72px;
+    height: 41.72px;
+    background-color: #00CF95;
+    transform: rotate(135deg);
+    position: absolute;
+    left: 5px;
+}
+
+.capa3{
+    width: 41.72px;
+    height: 41.72px;
+    background-color: #D1FFA2;
+    transform: rotate(135deg);
+    position: absolute;
+    left: 10px;
+}
+.capa4{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    color: #6D0AD3;
+    font-family: 'Beth_Ellen';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Creando navegador */
+
+nav{
+    margin-top: 40px;
+}
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 25px;
+}
+
+/* Agregando efecto HOVER */
+
+a:hover{
+    color: #00CF95;
+    cursor: pointer;
+}
+
+a:active{
+    color: #832FDA;
+    border-bottom: 2px solid #832FDA;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+}
+
+.head-menu{
+    padding: 5% 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.hello{
+    width: 50%;
+
+}
+
+.hello h3{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hello h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding: 10px 10px 10px 0;
+}
+
+.hello h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00CF95;
+    padding: 10px 10px 10px 0;
+}
+
+.hello p{
+    padding: 10px;
+    width: 80%;
+    border-left: 4px solid #00CF95;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.RSocial{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.RSocial button{
+    background-color: #6D0AD3;
+    border: 1px solid #6D0AD3;
+    color: white;
+    padding: 15px 35px;
+}
+
+.RSocial li{
+    font-size: 2rem;
+}
+
+.fa-linkedin{
+    color: #0098EF;
+}
+
+.fa-whatsapp{
+    color: green;
+}
+
+.photo{
+    width: 45%;
+    position: relative;
+}
+.mark-photo{
+    width: 326px;
+    height: 326px;
+    background-color: #D1FFA2;
+    border-radius: 100%;
+}
+
+.photo img{
+    width: 302px;
+    height: 302px;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+}
+
+.info{
+    position: absolute;
+    font-size: 1rem;
+    width: 25%;
+    top: 40px;
+    right: 0;
+}
+
+.info p{
+    border: 1px solid #0098EF;
+    width: 90%;
+    padding: 3px;
+    text-align: center;
+}
+
+.info button{
+    background-color: #0098EF;
+    border: 1px solid #0098EF;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+/* DOWN linea */
+
+.down-menu{
+    text-align: center;
+    color: #00CF95;
+    padding-bottom: 5%;
+}
+
+.down-menu i{
+    font-size: 7rem;
+}
+
+/* PORTFOLIO - Creando grid */
+
+.portfolio h2{
+    padding: 3% 2%;
+    color: #0098EF;
+    font-size: 2.8rem;
+}
+.grid-portfolio{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 5%;
+    justify-content: center;
+}
+
+.grid-portfolio div{
+    box-sizing: border-box;
+}
+
+.grid-portfolio img{
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+    border: 4px solid #D1FFA2;
+}
+
+.grid-portfolio img:hover{
+    border: 4px solid #00CF95;
+    border-radius: 5px;
+}
+
+.file-1{
+    position: relative;
+    padding: 20px;
+}
+
+.web-app{
+    position: absolute;
+    margin: 20px;
+    width: 80%;
+    height: 80%;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(109, 10, 211, 0.8);;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.descript{
+    width: 100%;
+    padding: 10%;
+}
+
+.descript p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-top: 5%;
+}
+
+.tools{
+    width: 100%;
+    padding: 2%;
+}
+
+.tools a{
+    background-color: #D1FFA2;
+    color: #580AAF;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 3%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+}
+
+/* SERVICES */
+
+.services{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services h2{
+    padding: 3% 2%;
+    color: #0098EF;
+    font-size: 2.8rem;
+}
+
+.grid-services{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 10%;
+}
+
+.service-tool{
+    width: 100%;
+    height: 218px;
+    background-color: #00CF95;
+    border: 5px solid #D1FFA2;
+    position: relative;
+}
+
+.service-tool div{
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #D1FFA2;
+    border-radius: 5px 0 0 5px;
+    bottom: 20%;
+    right: 0;
+}
+
+.service-tool i{
+    font-size: 4rem;
+    color: white;
+    padding: 5%;
+}
+
+.service-tool h2{
+    font-size: 2rem;
+}
+
+.service-tool:hover{
+    background-color: #00CF95;
+    border: 5px solid #5A0CB0;
+}
+
+.service-tool:hover i{
+    color: #5A0CB0;
+}
+
+.service-tool:hover div{
+    background-color: #5A0CB0;
+}
+
+.service-tool:hover h2{
+    color: white;
+}
